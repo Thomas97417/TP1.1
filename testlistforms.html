@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>testlistforms</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+        <!--<script src='main.js'></script>-->
+        <style>
+            table, td, th {border: 1px solid}
+        </style>
+    </head>
+    <body>
+        <a href="#">Textes&Listes&Formulaires</a>
+        <a href="./tables.html">Tableaux</a>
+        <a href="./medias.html">Médias</a>
+        <hr>
+        <u>Etudiant<br>Enseignant<br>Abbréviations</u>
+        <hr>
+        <h1>1.Etudiant<br></h1>
+        <form action="testlistforms.html" method="get">
+            Prénom:<br>
+            <input type="text" name="fname">
+            Nom:
+            <input type="text" name="lname">
+        </form>
+    <p>Année d'études  <input type="radio" name="annee" value="1A" checked >1A<input type="radio" name="annee" value="2A" checked>2A </p>
+    <p>Remarques:</p>
+    <textarea name="Remarques" placeholder="Une petite remarque ?" rows="5" cols="50"></textarea>
+    <p><input type="submit"></p>
+    <hr>
+    <h1>2.Enseignant</h1>
+    <form action="medias.html" method="get">
+        Prénom:<br>
+        <input type="text" name="fname"><br>
+        Nom:<br>
+        <input type="text" name="lname">
+        <p>Site:
+            <select>
+                <option>Brest</option>
+                <option>Nantes</option>
+                <option>Rennes</option>
+                <option>Caen</option>
+                <option>Lille</option>
+            </select>
+        </p>
+        <p>Mot de passe:<br><input type="password"></p>
+        <p><input type="submit"></p>
+    </form>
+
+    <hr>
+    <h1>3.Abbréviations</h1>
+    <h2>ISEN</h2>
+    <p>Institut Superieur de l'Electronique et du Numérique</p>
+    <h2>HTML</h2>
+    <p>HyperText Makup Language</p>
+    <hr>
+    </body>
+</html>

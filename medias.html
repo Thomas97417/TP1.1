@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>testlistforms</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--<script src='main.js'></script>-->
+        <style>
+            table, td, th {border: 1px solid}
+            nav.menu-nav ul li.btn{
+                list-style-type: decimal;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color: red;">Mon texte est tout rouge</p>
+        <a href="./testlistforms.html">Textes&Listes&Formulaires</a>
+        <a href="./tables.html">Tableaux</a>
+        <a href="./medias.html">Médias</a>
+        <hr>
+        <nav class="menu-nav">
+            <ul>
+                <li class="btn">
+                    <a href="#id1">
+                        Images
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="#id2"> 
+                        Vidéo 1
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="#id3">
+                        Vidéo 2
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="#id4">
+                        Audio
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="#id5">
+                        Iframe
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>Manipulation des médias en HTML</h1>
+        <h2 id="id1">Images
+            <span class="material-icons">
+            perm_media
+            </span>
+        </h2>
+        <table>
+            <tr>
+                <td rowspan="2">
+                    <img src="images/nantes.jpg" alt="photoNantes" width="200" height="100">
+                </td>
+                <td colspan="2">
+                    <svg width="400" height="200">
+                        <rect x="125" y="75" width="100" height="100"fill="green">
+                            <a href="https://isen-nantes.fr/" target="_BLANK"></a>
+                        </rect>
+                    </svg>
+                </td>
+                <td>
+                    <img src="images/nantes.jpg" alt="photoNantes" width="200" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <text x="0" y="15" fill="red" transform="rotate(30 20,40)">
+                        non disponible
+                    </text>
+                </td>
+                <td>
+                    <img src="images/nantes.jpg" alt="photoNantes" width="200" height="100">
+                </td>
+            </tr>
+        </table>
+        <h2 id="id2">Vidéo avec la balise &iframe>
+            <span class="material-icons">
+                movie
+            </span>
+        
+        </h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7gwK1dcz0IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 id="id3">Vidéo avec la balise &video>
+            <span class="material-icons">
+                movie
+            </span>
+        </h2>
+        <video width="320" height="240" controls>
+            <source src="vidéos/windtunnel.mp4" type="video/mp4">
+            <source src="vidéos/windtunnel.ogg" type="video/ogg">
+            <source src="vidéos/windtunnel.webm" type="video/webm">
+        </video>
+            
+        <h2 id="id4">Audio</h2>
+        <audio controls>
+            <source src="audio/audio.mp3.m4a" type="audio/mp3">
+            <source src="audio.ogg" type="audio/ogg">
+            </audio>
+        <h2 id="5">&iframe
+            <span class="material-icons">
+                link
+            </span>
+        </h2>    
+        <iframe src="https://isen-nantes.fr/" width="400" height="400" name="isenWebsite"></iframe>
+    </body>
+</html>
